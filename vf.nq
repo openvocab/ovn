@@ -803,7 +803,7 @@ _:b99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b100 .
 <https://w3id.org/valueflows#primaryAccountable> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent currently with primary rights and responsibilites for the economic resource. It is the agent that is associated with the accountingQuantity of the economic resource." .
 <https://w3id.org/valueflows#primaryAccountable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#EconomicResource> .
 <https://w3id.org/valueflows#primaryAccountable> <http://www.w3.org/2000/01/rdf-schema#label> "primary accountable" .
-<https://w3id.org/valueflows#primaryAccountable> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/valueflows#Agent> .
+<https://w3id.org/valueflows#primaryAccountable> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
 <https://w3id.org/valueflows#primaryAccountable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#primaryLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#primaryLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The main place an agent is located, often an address where activities occur and mail can be sent. This is usually a mappable geographic location.  It also could be a website address, as in the case of agents who have no physical location." .
