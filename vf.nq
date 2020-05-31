@@ -575,6 +575,18 @@ _:b99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b100 .
 <https://w3id.org/valueflows#decrementIncrement> <http://www.w3.org/2000/01/rdf-schema#comment> "The effect is to subtract from the 'from' inventoried resource, and add to the 'to' inventoried resource." .
 <https://w3id.org/valueflows#decrementIncrement> <http://www.w3.org/2000/01/rdf-schema#label> "decrement/increment" .
 <https://w3id.org/valueflows#decrementIncrement> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<https://w3id.org/valueflows#defaultUnitOfEffort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#defaultUnitOfEffort> <http://www.w3.org/2000/01/rdf-schema#comment> "The default unit used for use or work." .
+<https://w3id.org/valueflows#defaultUnitOfEffort> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#ResourceSpecification> .
+<https://w3id.org/valueflows#defaultUnitOfEffort> <http://www.w3.org/2000/01/rdf-schema#label> "default unit of effort" .
+<https://w3id.org/valueflows#defaultUnitOfEffort> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+<https://w3id.org/valueflows#defaultUnitOfEffort> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+<https://w3id.org/valueflows#defaultUnitOfResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/valueflows#defaultUnitOfResource> <http://www.w3.org/2000/01/rdf-schema#comment> "The default unit used for the resource itself." .
+<https://w3id.org/valueflows#defaultUnitOfResource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#ResourceSpecification> .
+<https://w3id.org/valueflows#defaultUnitOfResource> <http://www.w3.org/2000/01/rdf-schema#label> "default unit of resource" .
+<https://w3id.org/valueflows#defaultUnitOfResource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+<https://w3id.org/valueflows#defaultUnitOfResource> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
 <https://w3id.org/valueflows#definedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/valueflows#definedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The scenario definition for this scenario, for example yearly budget." .
 <https://w3id.org/valueflows#definedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/valueflows#Scenario> .
