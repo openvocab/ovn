@@ -1132,4 +1132,4 @@ _:b99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b100 .
 <https://w3id.org/valueflows/> <http://purl.org/dc/terms/title> "Value Flows Ontology" .
 <https://w3id.org/valueflows/> <http://purl.org/dc/terms/type> <http://purl.org/adms/assettype/Ontology> .
 <https://w3id.org/valueflows/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/valueflows/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/valueflows/0.4/> .
+<https://w3id.org/valueflows/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/valueflows/0.5/> .
