@@ -67,7 +67,7 @@
   - '@id': med:b90b0b77-09a2-42e2-8bd4-e9ae2c1c6172
     '@type': EconomicEvent
     inputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: accept
+    action: pack
     provider: https://medical.example/
     receiver: https://medical.example/
     resourceInventoriedAs: med:3129ca8b-fcda-45be-bbda-294dc924d3b9 # a medical gown
@@ -78,7 +78,7 @@
   - '@id': med:a8236bbb-81e0-422d-9861-56d2417db0fb
     '@type': EconomicEvent
     inputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: accept
+    action: pack
     provider: https://medical.example/
     receiver: https://medical.example/
     resourceInventoriedAs: med:3129ca8b-fcda-45be-bbda-294dc924d3b0 # a medical gown
@@ -89,7 +89,7 @@
   - '@id': med:6f438393-7f87-4914-806c-e23a4fd15e89
     '@type': EconomicEvent
     inputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: accept
+    action: pack
     provider: https://medical.example/
     receiver: https://medical.example/
     resourceInventoriedAs: med:3129ca8b-fcda-45be-bbda-294dc924d3b1 # a medical gown
@@ -108,39 +108,6 @@
       om2:hasUnit: om2:one
       om2:hasNumericalValue: 1
     note: Container is full at this point.
-
-  - '@id': med:b90b0b77-09a2-42e2-8bd4-e9ae2c1c6172
-    '@type': EconomicEvent
-    outputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: pack
-    provider: https://medical.example/
-    receiver: https://medical.example/
-    resourceInventoriedAs: med:3129ca8b-fcda-45be-bbda-294dc924d3b9 # a medical gown
-    resourceQuantity:
-      om2:hasUnit: om2:one
-      om2:hasNumericalValue: 1
-
-  - '@id': med:a8236bbb-81e0-422d-9861-56d2417db0fb
-    '@type': EconomicEvent
-    outputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: pack
-    provider: https://medical.example/
-    receiver: https://medical.example/
-    resourceInventoriedAs: med:3129ca8b-fcda-45be-bbda-294dc924d3b0 # a medical gown
-    resourceQuantity:
-      om2:hasUnit: om2:one
-      om2:hasNumericalValue: 1
-
-  - '@id': med:6f438393-7f87-4914-806c-e23a4fd15e89
-    '@type': EconomicEvent
-    outputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: pack
-    provider: https://medical.example/
-    receiver: https://medical.example/
-    resourceInventoriedAs: med:3129ca8b-fcda-45be-bbda-294dc924d3b1 # a medical gown
-    resourceQuantity:
-      om2:hasUnit: om2:one
-      om2:hasNumericalValue: 1
 
   # Economic resources after packing
 
@@ -256,7 +223,7 @@
       om2:hasUnit: om2:one
       om2:hasNumericalValue: 1
 
-  # Economic resources after packing
+  # Economic resources after unpacking
 
   - '@id': med:e1721a61-cd47-4556-84b9-8b1b81da15bf
     '@type': EconomicResource
