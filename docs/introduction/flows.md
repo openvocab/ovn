@@ -52,10 +52,10 @@ All flows use an action property to designate what the flow is doing and how it 
 * vf:consume - for example an ingredient or component composed into the output, after the process the ingredient is gone
 * vf:cite - for example a design file, neither used nor consumed, the file remains available at all times
 * vf:work - labor power applied to a process
-* vf:pickup -  transported resource or person enters the process; the same resource will appear in output with *vf:dropoff* verb
-* vf:dropoff -  transported resource or person leaves the process; the same resource or person appeared in input with vf:pickup verb
-* vf:accept - in processes like repair or modification or testing, the same resource will appear in output with *vf:modify* verb
-* vf:modify - in processes like repair or modification, the same resource will appear in input with *vf:accept* verb
+* vf:pickup -  transported resource or person enters the process; the same resource will appear in output with *vf:dropoff*
+* vf:dropoff -  transported resource or person leaves the process; the same resource or person appeared in input with vf:pickup
+* vf:accept - in processes like repair or modification or testing, the same resource will appear in output with *vf:modify*
+* vf:modify - in processes like repair or modification, the same resource will appear in input with *vf:accept*
 * vf:pack - put a resource into a container resource; the container resource is input with *vf:accept*
 * vf:unpack - remove a resource from a container resource; the container resource is input with *vf:accept*
 * vf:deliver-service - new service produced and delivered (a service implies that an agent actively receives the service)
@@ -78,7 +78,7 @@ pickup | No effect | No effect  | Input | N/A | dropoff |
 dropoff | No effect | No effect | Output | currentLocation | pickup |
 accept | No effect | Decrement  | Input | N/A | modify |
 modify | No effect | Increment  | Output | N/A | accept |
-pack | No effect | Decrement  | Output | add containedIn | accept |
+pack | No effect | Decrement  | Input | add containedIn | accept |
 unpack | No effect | Increment | Output | remove containedIn | accept |
 transfer-custody | No effect | Decr+Incr(2) | N/A | N/A | N/A |
 transfer-all-rights | Decr+Incr(2) | No effect | N/A | N/A | N/A |
