@@ -4,7 +4,7 @@ Proposals refer to published requests or offers, sometimes with what is expected
 
 Proposals are everywhere in advertising.  But we see many groups posting proposals that are different from commercial advertisements or e-commerce offers.
 
-Proposals can stay directed to broad or specific *audience*. In the broadest case, they stay available for anyone (public proposals). In the most narrow case, the stay available only for specific agent. In between those two extremes a whole spectrum exists, for example two distinct proposals can exist on providing particular product or service - one for club members and one for general public etc.
+Proposals can stay directed to broad or specific *audience*. In the broadest case, they stay available for anyone (public proposals). In the most narrow case, the stay available only for specific agent. In between those two extremes a whole spectrum exists.  For example two distinct proposals can exist on providing particular product or service - one for club members and one for general public etc.
 
 Proposals may be specific or more general, often not commercial at all, expressed not in identified products but in categories, tags, and text.  But they want to find each other. The offers want to find the matching requests. The requests want to find the matching offers.
 
