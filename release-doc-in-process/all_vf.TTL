@@ -211,6 +211,13 @@ vf:AgentRelationship  a     owl:Class ;
         rdfs:comment        "An ongoing voluntary association between 2 agents of any kind."@en ;
         .
 
+vf:EnvironmentalAgent  a    owl:Class ;
+        rdfs:label          "Environmental Agent"@en ;
+        rdfs:subClassOf     foaf:Agent ;
+        vs:term_status      "unstable" ;
+        rdfs:comment        "This expands the concept of agent to include aspects of the non-human environment, for purposes of ecological accounting."@en ;
+        .
+
 vf:Fulfillment  a           owl:Class ;
         rdfs:label          "Fulfillment"@en ;
         vs:term_status      "testing" ;

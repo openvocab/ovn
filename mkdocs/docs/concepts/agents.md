@@ -2,9 +2,11 @@ The agent vocabulary describes networks of people, organizations and networks, c
 
 ### Agents
 
-Agents can be individual persons or organizations. Organizations include formal or informal organizations of all kinds. (The concept of "Agent" will in the future probably include "ecological agents", as we explore with others how to use REA for ecological accounting to combat climate change. The concept of "Agent" could also in the future include software agents, but this is controversial.)
+Agents can be individual persons or organizations or "environmental agents". Organizations include formal or informal organizations of all kinds. The environmental agent concept is added to expand the scope of REA to do ecological accounting. This is intended to provide the ability to document the reality of resources and events impacting the environment, either adding to or taking from.  Perhaps the most obvious example is CO2 being added to the air.  People could also act "on behalf of" the environment, perhaps.  And people can define what they consider to be agents, such as has been done when Lake Erie was legally given certain rights normally reserved for people. (The concept of "Agent" could also in the future include software agents, but this is controversial.)
 
-In Valueflows, we are talking about economic agents, agents who can create or exchange value, and make agreements with each other - who have economic agency.  But we want to re-use existing vocabularies for commonly defined things (including foaf:Agent, foaf:Person, org:Organization), so we have elected to use those as much as possible here, even though they are sometimes more broadly defined.  But also, the broader definitions will help map and integrate technologies across the web.
+In Valueflows, we are talking about economic agents, agents who can create or exchange value, and make agreements with each other - who have economic agency.  But we want to re-use existing vocabularies for commonly defined things (including foaf:Agent, foaf:Person, org:Organization), so we have elected to use those as much as possible here, even though they are sometimes more broadly defined.  But also, the broader definitions will help map and integrate technologies across the internet.
+
+Adding the class Environmental Agent also expands the concept of "economic", bringing that kind of activity and impact, and even agency, out to the whole ecosystem, not just the human one.
 
 If people want to define types of organizations (like cooperative, corporation, network, community, etc.) we provide a classification property which people can define as they wish.
 
