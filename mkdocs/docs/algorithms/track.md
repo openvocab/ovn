@@ -19,8 +19,9 @@ It is also used when the provenance is useful for other information, like to det
 Also, this logic is used in other features, like "contribution economy" calculations.
 
 Terminology note:
-* `previous` and `next` bring back the element one flow step" backwards or forwards
-* `track` and `trace` bring back the whole resource flow forwards or backwards, starting with a resource (or a deliver-service? or... ?)
+
+* `previous` and `next` bring back the element one flow step backwards or forwards
+* `track` and `trace` bring back the whole resource flow forwards or backwards, starting with a resource or an output event
 
 ### Previous and next logic
 
