@@ -20,7 +20,7 @@ Also, this logic is used in other features, like "contribution economy" calculat
 
 Terminology note:
 * `previous` and `next` bring back the element one layer backwards or forwards
-* `track` and `trace` bring back the whole resource flow forwards or backwards, starting with a resource (or a deliver-service? or... ?)
+* `track` and `trace` bring back the whole resource flow forwards or backwards, starting with a resource or an economic event
 
 ### Previous and next logic
 
