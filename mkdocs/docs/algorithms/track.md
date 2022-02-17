@@ -19,8 +19,8 @@ It is also used when the provenance is useful for other information, like to det
 Also, this logic is used in other features, like "contribution economy" calculations.
 
 Terminology note:
-* `previous` and `next` bring back the element one layer backwards or forwards
-* `track` and `trace` bring back the whole resource flow forwards or backwards, starting with a resource or an economic event
+* `previous` and `next` bring back the element one flow step" backwards or forwards
+* `track` and `trace` bring back the whole resource flow forwards or backwards, starting with a resource (or a deliver-service? or... ?)
 
 ### Previous and next logic
 
@@ -43,6 +43,7 @@ Here is the logic finding the flow element that comes directly after a particula
         * a Process to which it is an input, or
         * an EconomicResource which it affected as the output of a Process, or
         * if it is a transfer (any kind) or move event, the EconomicResource referenced as `toResourceInventoriedAs`
+
     * previous:
         * a Process from which it is an output, or
         * an EconomicResource which it affected as the input of a Process, or
@@ -57,30 +58,14 @@ For these reasons, tracking identifier (often a serial number) and a standard lo
 
 Note that in VF, for simplicity, besides `lot`, a lot identifier can be stored in the `trackingIdentifier` property.
 
-Also note that lots get "spread out" into splits of a resource or different types of resources.  For example, one cow could have a lot identifier, which when the cow goes through a butchering process will be included in all the cuts of beef from that cow.  Or one production batch of a medicine that contains many packages of the same medicine would have a lot identifier, which follows all the individual packages wherever they go.
+Also note that lots get "spread out" into splits of a resource or different types of resources.  For example, one cow could have a lot identifier, which when the cow goes through a butchering process will be included in all the cuts of beef from that cow.  Or one production batch of a medicine that contains many packages of the same medicine would have a lot identifier, which stays attached to the individual packages wherever they go.
 
 
 ### Track and trace Logic
 
-To gather a whole track or trace..... recursive logic; topological sort  maybe, but I don't think so; ...
+To gather a whole track or trace, the previous and next methods should be used in recursive logic, traveling down the flow and each branch of the flow, when there are many inputs or many outputs.  For most production flows, this will be relatively straight-forward.
 
+Sometimes the economic resource is both input and output of a process, sometimes a series of processes, such as for repair or quality testing or a workflow where a resource is refined through stages like writing/editing/etc. 
+In those cases, tracking and tracing logic needs to identify where in the flow paths the resource is located at each step of the flow.
 
-some specifics....
-
-When dealing with resources that are packed into and unpacked from a container resource, if the resource has been packed, then the logic needs to follow the container resource until the resource is unpacked.
-
-
-for an event, next:
-        * if it is a pack event, handle normally as above (a Process to which it is an input), but... coming out of that Process you will see the modify event of the container, referencing the container EconomicResource, but you have to remember the original resource also, which is now in the container, see diagram at https://www.valueflo.ws/examples/ex-production/#pack-unpack
-        * if it is an unpack event, handle normally as above (an EconomicResource which it affected), but... you will not be tracking the container any more
-
-for an event, previous:
-        * if it is a pack event, the EconomicResource referenced as `containedIn` ... but keep track of the original resource...
-        * if it is an unpack event, the Process as normal, ... but then follow the container in `containedIn` while remembering the contained resource to find again when it is packed
-
-
-When the same economic resource is both input and output of a process, sometimes a series of processes, such as for repair or quality testing or a workflow where a resource is refined through stages like writing/editing/etc, the stage must be identified, based on the kind of process the resource was last output of.
-
-state.....
-
-how to pick the best previous or next when the resource is the same through multiple stages or cycles, so that previous or next returns multiple records, which will only happen when a resourc is looking for output events that reference it.... I thnk we will have to use event dates, but discussion is ongoing...
+When dealing with resources that are packed into and unpacked from a container resource, if the resource has been packed, then the logic needs to follow the container resource until the resource (being traced} is unpacked, while also remembering the specific resource being followed.
