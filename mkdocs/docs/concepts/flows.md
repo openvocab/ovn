@@ -49,7 +49,7 @@ Intents, Commitments, and Economic Events can occur at any granularity that is n
 
 All flows use an action property to designate what the flow is doing and how it will affect an economic resource (or not).  Actions are defined as follows.
 
-* vf:produce - new resource created in that process or an existing stock resource of the same type added to
+* vf:produce - new resource created in that process or an addition to an existing stock resource of the same type
 * vf:use - for example a tool used in process; after the process, the tool still exists, but during the process, the tool is unavailable
 * vf:consume - for example an ingredient or component used up or transformed into the output, after the process the input is gone
 * vf:cite - for example a design file, neither used nor consumed, the file remains available at all times
@@ -58,7 +58,7 @@ All flows use an action property to designate what the flow is doing and how it 
 * vf:dropoff -  transported resource or person leaves the process; the same resource or person appeared in input with *vf:pickup*
 * vf:accept - input to processes like repair or modification or testing, the same resource will appear in output with *vf:modify*
 * vf:modify - output of processes like repair or modification or testing, the same resource will appear in input with *vf:accept*
-* vf:combine - put a resource in a package or combination resource; the same resource will appear later with *vf:separate*
+* vf:combine - put a resource in a package or combination resource; the same resource might appear later with *vf:separate*
 * vf:separate - remove a resource from a package or combination resource; the same resource appeared as input with *vf:combine*
 * vf:deliver-service - new service produced and delivered (a service implies that an agent actively receives the service)
 * vf:transfer-all-rights - give full (in the human realm) rights and responsibilities to another agent, without transferring physical custody
