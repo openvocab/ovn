@@ -190,7 +190,7 @@ vf:Scenario  a              owl:Class ;
 vf:EconomicResource  a      owl:Class ;
         rdfs:label          "Economic Resource"@en ;
         vs:term_status      "stable" ;
-        rdfs:comment        "A resource which is useful to people or the ecosystem."@en ;
+        rdfs:comment        "Economic or ecological inputs to or outputs from processes. They are usually considered useful to agents, but also could harm them."@en ;
         .
 
 vf:Process  a               owl:Class ;
@@ -211,11 +211,11 @@ vf:AgentRelationship  a     owl:Class ;
         rdfs:comment        "An ongoing voluntary association between 2 agents of any kind."@en ;
         .
 
-vf:EnvironmentalAgent  a    owl:Class ;
-        rdfs:label          "Environmental Agent"@en ;
+vf:EcologicalAgent  a       owl:Class ;
+        rdfs:label          "Ecological Agent"@en ;
         rdfs:subClassOf     foaf:Agent ;
         vs:term_status      "unstable" ;
-        rdfs:comment        "This expands the concept of agent to include aspects of the non-human environment, for purposes of ecological accounting."@en ;
+        rdfs:comment        "Non-human individual or group of living things, or a functional ecosystem of organisms including non-humans."@en ;
         .
 
 vf:Fulfillment  a           owl:Class ;

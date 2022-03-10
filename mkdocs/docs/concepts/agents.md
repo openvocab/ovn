@@ -6,9 +6,11 @@ Agents can be individual persons or organizations or "environmental agents". Org
 
 In Valueflows, we are talking about economic agents, agents who can create or exchange value, and make agreements with each other - who have economic agency.  But we want to re-use existing vocabularies for commonly defined things (including foaf:Agent, foaf:Person, org:Organization), so we have elected to use those as much as possible here, even though they are sometimes more broadly defined.  But also, the broader definitions will help map and integrate technologies across the internet.
 
-Adding the class Environmental Agent also expands the concept of "economic", bringing that kind of activity and impact, and even agency, out to the whole ecosystem, not just the human one.
+Adding the class Ecological Agent also expands the concept of "economic", bringing that kind of activity and impact, and even agency, out to the whole ecosystem, not just the human one.
 
-If people want to define types of organizations (like cooperative, corporation, network, community, etc.) we provide a classification property which people can define as they wish.
+If people want to define types of organizations (like cooperative, corporation, network, community, etc.) we provide a classification property which people can define as they wish.  We do the same for EcologicalAgent (like ecosystem, an identified individual living thing or group of living things).
+
+We have defined the properties of Agents fairly minimally. There are a number of useful properties in existing vocabularies, such as [foaf](http://xmlns.com/foaf/spec/), [vcard](https://www.w3.org/TR/vcard-rdf/), and others that can be used. Or people can create their own as needed.
 
 ### Agent Relationships
 
@@ -18,11 +20,11 @@ A relationship can be direct, like "steward", or more like a role, for example "
 
 Relationships can also include roles like "sub-organization" or "trading partner".
 
-There are a number of useful Properties in existing vocabularies that can be used. Or people can create their own as needed.
-
 Relationships have direction: For example, in "Michael is a member of Enspiral", Michael is the subject and Enspiral is the object.  In this case the inverse is also valid, "Enspiral has member Michael". In VF, we consider this to be one relationship.  One directional relationships like "follows" are also supported.
 
 Relationships can be in a [scope](scoping.md) (or not): For example, "Kathy is mentor of Sam, in the scope of Enspiral."
+
+EcologicalAgents and Organizations both need human Agents to act on their behalf and represent their agency in the world of people. This can be defined as various roles.
 
 ### Agent Philosophies
 
