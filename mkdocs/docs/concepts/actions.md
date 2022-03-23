@@ -8,9 +8,9 @@ All flows (Economic Event, Commitment, Intent, Claim, Recipe Flow) use an action
 
 **vf:consume** - Most often, an ingredient or component is transformed  into the output(s) of the process. Or the input resource can be used up during the process, like energy. After the process the specified quantity of the consumed input is gone.
 
-**vf:cite** - `cite` is used when a resource is input to a process, but is neigher used nor consumed, and remains available during the process.  Examples are a design file or a scientific paper, any digital knowledge, which is cited so that the agent(s) responsible for the resource receive credit.
+**vf:cite** - `cite` is used when a resource is input to a process, but is neither used nor consumed, and remains available during the process.  Examples are a design file or a scientific paper, any digital knowledge, which is cited so that the agent(s) responsible for the resource receive credit.
 
-**vf:work** - `work` refers to labor power applied to a process.  There is generally no identifiable resource involved, only the provider agent. In this case, the type of work or skill involved can be identifies by a resource specification. A possible exception would be if the agent's work schedule is kept on a calendar, representing when the specific agent is available to work.
+**vf:work** - `work` refers to labor power applied to a process.  There is generally no identifiable resource involved, only the provider agent. In this case, the type of work or skill involved can be identified by a resource specification. A possible exception would be if the agent's work schedule is kept on a calendar, representing when the specific agent is available to work.
 
 **vf:pickup** -  The transported resource or person enters the process; the same resource will appear later in an output of the process.  It is assumed that the resource is already in custody of the agent providing the transportation.
 
