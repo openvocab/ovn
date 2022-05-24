@@ -338,6 +338,8 @@ Simple pack and unpack of resources into and out of a container resource, using 
 
 ![pack unpack diagram](../assets/examples/pack-unpack.png)
 
+(Note that if the user wants to combine more resources into an existing package resource, or wants to remove some but not all of the resources from an existing package resource, then they would use `accept` and `modify`, instead of `produce` and `consume`, as done in this example.)
+
 ``` yaml
 # Example: Simple pack and unpack processes
 
@@ -396,6 +398,18 @@ Simple pack and unpack of resources into and out of a container resource, using 
 
   - '@id': med:b52a5815-fae9-43bf-be95-833b95dc0adb
     '@type': EconomicEvent
+    outputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
+    action: produce
+    provider: https://medical.example/
+    receiver: https://medical.example/
+    resourceConformsTo: https://www.wikidata.org/wiki/Q2127468 # packaging unit
+    resourceQuantity:
+      om2:hasUnit: om2:one
+      om2:hasNumericalValue: 1
+    note: This is a new resource, a package containing all inputs.
+
+  - '@id': med:b52a5815-fae9-43bf-be95-833b95dc0adb
+    '@type': EconomicEvent
     inputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
     action: combine
     provider: https://medical.example/
@@ -404,6 +418,7 @@ Simple pack and unpack of resources into and out of a container resource, using 
     resourceQuantity:
       om2:hasUnit: om2:one
       om2:hasNumericalValue: 1
+    resourceContainedIn: med:e1721a61-cd47-4556-84b9-8b1b81da564h
     note: Container is empty at this point.
 
   - '@id': med:b90b0b77-09a2-42e2-8bd4-e9ae2c1c6172
@@ -416,6 +431,7 @@ Simple pack and unpack of resources into and out of a container resource, using 
     resourceQuantity:
       om2:hasUnit: om2:one
       om2:hasNumericalValue: 1
+    resourceContainedIn: med:e1721a61-cd47-4556-84b9-8b1b81da564h
 
   - '@id': med:a8236bbb-81e0-422d-9861-56d2417db0fb
     '@type': EconomicEvent
@@ -427,6 +443,7 @@ Simple pack and unpack of resources into and out of a container resource, using 
     resourceQuantity:
       om2:hasUnit: om2:one
       om2:hasNumericalValue: 1
+    resourceContainedIn: med:e1721a61-cd47-4556-84b9-8b1b81da564h
 
   - '@id': med:6f438393-7f87-4914-806c-e23a4fd15e89
     '@type': EconomicEvent
@@ -438,18 +455,7 @@ Simple pack and unpack of resources into and out of a container resource, using 
     resourceQuantity:
       om2:hasUnit: om2:one
       om2:hasNumericalValue: 1
-
-  - '@id': med:b52a5815-fae9-43bf-be95-833b95dc0adb
-    '@type': EconomicEvent
-    outputOf: med:02b39a30-3e04-4305-9656-7f261aa63c84
-    action: produce
-    provider: https://medical.example/
-    receiver: https://medical.example/
-    resourceConformsTo: https://www.wikidata.org/wiki/Q2127468 # packaging unit
-    resourceQuantity:
-      om2:hasUnit: om2:one
-      om2:hasNumericalValue: 1
-    note: This is a new resource, a package containing all inputs.
+    resourceContainedIn: med:e1721a61-cd47-4556-84b9-8b1b81da564h
 
   # Economic resources after packing
 
@@ -581,6 +587,7 @@ Simple pack and unpack of resources into and out of a container resource, using 
     accountingQuantity:
       om2:hasUnit: om2:one
       om2:hasNumericalValue: 1
+    containedIn:
 
   - '@id': med:3129ca8b-fcda-45be-bbda-294dc924d3b9
     '@type': EconomicResource

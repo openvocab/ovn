@@ -614,6 +614,14 @@ vf:toLocation a             owl:ObjectProperty ;
         rdfs:comment        "The new location of the receiver resource."@en ;
         .
 
+vf:resourceContainedIn a    owl:ObjectProperty ;
+        rdfs:label          "resource contained in"@en ;
+        rdfs:domain         vf:EconomicEvent ;
+        rdfs:range          vf:EconomicResource ;
+        vs:term_status      "unstable" ;
+        rdfs:comment        "The container or package resource into which the inventoried resource will be combined."@en ;
+        .
+
 vf:image a                  owl:DatatypeProperty ;
         vs:term_status      "unstable" ;
         rdfs:label          "image"@en ;
