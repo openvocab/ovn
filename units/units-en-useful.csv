@@ -66,25 +66,25 @@ Unit,steradian,steradian,sr,The steradian is a unit of solid angle defined as th
 Unit,BirminghamGauge,Birmingham gauge,G,,
 Unit,FrenchGauge,French gauge,Fr,,
 Unit,solarRadius,solar radius,R_â˜‰,Solar radius is a unit used in astronomy to denote stellar or stellar system radii (http://en.wikipedia.org/wiki/solarRadius).,astronomy
-Unit,bar-Food,bar (food),,,
-Unit,bottle,bottle,,,
-Unit,bowl,bowl,,,
-Unit,cup,cup,,,
-Unit,dash,dash,,,
-Unit,deepBowl,deep bowl,,,
-Unit,drop,drop,,,
-Unit,fillet,fillet,,,
-Unit,glass,glass,,,
-Unit,handful,handful,,,
-Unit,piece,piece,,,
-Unit,pinch,pinch,,,
-Unit,portion,portion,,,
-Unit,scoop,scoop,,,
-Unit,servingSpoon,serving spoon,,,
-Unit,slice,slice,,,
-Unit,spread,spread,,,
-Unit,wedge,wedge,,,
-Unit,wineGlass,wine glass,,,
+Unit,bar-Food,bar (food),,,one
+Unit,bottle,bottle,,,one
+Unit,bowl,bowl,,,one
+Unit,cup,cup,,,volume
+Unit,dash,dash,,,one
+Unit,deepBowl,deep bowl,,,one
+Unit,drop,drop,,,one
+Unit,fillet,fillet,,,one
+Unit,glass,glass,,,one
+Unit,handful,handful,,,one
+Unit,piece,piece,,,one
+Unit,pinch,pinch,,,one
+Unit,portion,portion,,,one
+Unit,scoop,scoop,,,one
+Unit,servingSpoon,serving spoon,,,one
+Unit,slice,slice,,,one
+Unit,spread,spread,,,one
+Unit,wedge,wedge,,,one
+Unit,wineGlass,wine glass,,,volume
 Unit,gram,gram,g,The gram is a unit of mass defined as 1.0e-3 kilogram.,mass
 Unit,second-Time,second,s,The second is a unit of time defined as the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom.,time
 Unit,hertz,hertz,Hz,The hertz is a unit of frequency defined as 1 divided by second.,frequency
