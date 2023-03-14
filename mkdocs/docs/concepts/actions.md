@@ -36,7 +36,7 @@ We have defined a core set of actions, but expect that this will be extended wit
 
 **transfer** - This action gives full (human) rights and responsibilities plus physical custody, combining the last two actions.
 
-**move** - `move` changes the location, and possibly the identifier, if location is part of the logical identifier, of a resource with no transfer of agent rights or custodianship.
+**move** - `move` changes the location (and possibly the identifier, if location is part of the logical identifier) of a resource, but does not transfer agent rights or custodianship.
 
 **copy** - A new resource is created for the receiver, an exact copy of the original provider resource.
 
